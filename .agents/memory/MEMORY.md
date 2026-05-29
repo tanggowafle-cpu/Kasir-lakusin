@@ -1,0 +1,1 @@
+- [Lakusin Mobile App Setup](lakusin-setup.md) — Full POS app for Indonesian warung owners using Expo + Clerk auth, all screens implemented and working.

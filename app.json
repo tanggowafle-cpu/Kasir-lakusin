@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "3d81db49-2e55-45db-a501-d760d9863d22"
+      }
+    },
+    "android": {
+      "package": "com.tanggowafle.workspace"
+    }
+  }
+}
