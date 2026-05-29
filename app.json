@@ -2,11 +2,12 @@
   "expo": {
     "extra": {
       "eas": {
-        "projectId": "3d81db49-2e55-45db-a501-d760d9863d22"
+        "projectId": "42908047-9361-46fb-980d-8f85894429e7"
       }
     },
     "android": {
       "package": "com.tanggowafle.workspace"
-    }
+    },
+    "owner": "tanggowafle"
   }
 }
