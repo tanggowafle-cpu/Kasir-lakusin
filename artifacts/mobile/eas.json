@@ -1,6 +1,7 @@
 {
   "cli": {
-    "version": ">= 12.0.0"
+    "version": ">= 12.0.0",
+    "appVersionSource": "remote"
   },
   "build": {
     "preview": {
@@ -8,13 +9,13 @@
       "android": {
         "buildType": "apk"
       },
-      "config": "eas-build-pre-install.js"
+      "config": ".eas/build/eas-build-pre-install.js"
     },
     "production": {
       "android": {
         "buildType": "apk"
       },
-      "config": "eas-build-pre-install.js"
+      "config": ".eas/build/eas-build-pre-install.js"
     }
   }
 }
