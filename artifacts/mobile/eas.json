@@ -1,27 +1,20 @@
 {
   "cli": {
-    "version": ">= 16.0.0",
-    "appVersionSource": "local"
+    "version": ">= 12.0.0"
   },
   "build": {
     "preview": {
-      "android": {
-        "buildType": "apk",
-        "gradleCommand": ":app:assembleRelease"
-      },
       "distribution": "internal",
-      "channel": "preview"
+      "android": {
+        "buildType": "apk"
+      },
+      "config": "eas-build-pre-install.js"
     },
     "production": {
       "android": {
-        "buildType": "apk",
-        "gradleCommand": ":app:assembleRelease"
+        "buildType": "apk"
       },
-      "distribution": "store",
-      "channel": "production"
+      "config": "eas-build-pre-install.js"
     }
-  },
-  "submit": {
-    "production": {}
   }
 }
