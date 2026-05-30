@@ -9,13 +9,13 @@
       "android": {
         "buildType": "apk"
       },
-      "config": ".eas/build/eas-build-pre-install.js"
+      "config": "eas-build-pre-install.js"
     },
     "production": {
       "android": {
         "buildType": "apk"
       },
-      "config": ".eas/build/eas-build-pre-install.js"
+      "config": "eas-build-pre-install.js"
     }
   }
 }

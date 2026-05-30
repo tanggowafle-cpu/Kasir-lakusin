@@ -4,11 +4,9 @@ const fs = require("fs");
 
 module.exports = async () => {
   console.log("=== Custom pre-install hook ===");
-
   const workdir = process.env.EAS_BUILD_WORKINGDIR || process.cwd();
   console.log("Working dir:", workdir);
 
-  // Copy pnpm-lock.yaml from root if exists
   const rootLock = path.join(workdir, "../../pnpm-lock.yaml");
   const localLock = path.join(workdir, "pnpm-lock.yaml");
 
@@ -17,7 +15,6 @@ module.exports = async () => {
     fs.copyFileSync(rootLock, localLock);
   }
 
-  // Force install without frozen lockfile
   execSync("pnpm install --no-frozen-lockfile", {
     stdio: "inherit",
     cwd: workdir,
