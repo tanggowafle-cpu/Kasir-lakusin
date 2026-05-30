@@ -16,17 +16,5 @@
   "dependencies": {
     "expo": "^56.0.7"
   },
-  "workspaces": {
-    "packages": [
-      "artifacts/mobile"
-    ],
-    "nohoist": [
-      "**/expo*",
-      "**/expo*/**",
-      "**/react-native*",
-      "**/react-native*/**",
-      "**/metro*",
-      "**/metro*/**"
-    ]
-  }
+  "packageManager": "pnpm@9.0.0"
 }
