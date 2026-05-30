@@ -33,6 +33,11 @@ minimumReleaseAgeExclude:
   # this setting guards against does not apply to our own packages.
   - '@replit/*'
   - stripe-replit-sync
+  - '@expo/cli@56.1.13'
+  - '@expo/package-manager@1.12.1'
+  - '@expo/prebuild-config@56.0.14'
+  - expo-modules-core@56.0.14
+  - expo@56.0.7
 
 packages:
   - artifacts/*
@@ -158,3 +163,10 @@ overrides:
   # drizzle-kit uses esbuild internally on an older version that's vulnerable, this overrides it
   "@esbuild-kit/esm-loader": "npm:tsx@^4.21.0"
   esbuild: "0.27.3"
+
+allowBuilds:
+  '@clerk/shared': set this to true or false
+  browser-tabs-lock: set this to true or false
+  core-js: set this to true or false
+  esbuild: set this to true or false
+  msgpackr-extract: set this to true or false
