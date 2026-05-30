@@ -9,13 +9,17 @@
       "android": {
         "buildType": "apk"
       },
-      "config": "eas-build-pre-install.js"
+      "env": {
+        "EXPO_NO_FROZEN_LOCKFILE": "1"
+      }
     },
     "production": {
       "android": {
         "buildType": "apk"
       },
-      "config": "eas-build-pre-install.js"
+      "env": {
+        "EXPO_NO_FROZEN_LOCKFILE": "1"
+      }
     }
   }
 }
